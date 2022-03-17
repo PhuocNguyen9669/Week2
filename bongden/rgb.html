@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change RGB Color</title>
+</head>
+<body style="text-align: center; width: 100%;">
+    <div>
+        <h1>RGB</h1>
+        <table>
+            <input type="text" id="RGB" value="(255,255,255)">
+        </table>
+    </div>
+    <div>
+        <table style="width:100%"> 
+            <tr>
+                <td>R: <input type="text" id="idRed" value="255" disabled><br><input type="range" value="255" min="0" max="255" id="red"></td>
+            </tr>
+            <td>G: <input type="text" id="idGreen" value="255" disabled><br><input type="range" value="255" min="0" max="255" id="green"></td>
+            </tr>
+            <tr>
+               <td>B: <input type="text" id="idBlue" value="255" disabled><br><input type="range" value="255" min="0" max="255" id="blue"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+<script>
+    function myColour {
+    var red = document.getElementById('red').value;
+    var green = document.getElementById('green').value;
+    var blue = document.getElementById('blue');
+    var colorr = "rgb(' +red+','+green+','+blue+')";
+    document.getElementById("idRed").value = red;
+    document.getElementById("idGreen").value = green
+    document.getElementById("idBlue").value = blue;
+    document.getElementById("RGB").value = color;
+    document.getElementById("RGB").style.backgroundColor= colorr;
+    }
+    document.addEventListener('input', myColour)
+
+</script>
+</html>

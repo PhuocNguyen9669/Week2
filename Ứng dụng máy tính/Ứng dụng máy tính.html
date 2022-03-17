@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Caculator</h1>
+    <form>    
+        <input type="text" id="number1"> <input type="text" id="number2"><br>
+        <button onclick="tonghaiso()">Addition(+)</button>
+        <button onclick="hieuhaiso()">Subtraction(-)</button>
+        <button onclick="tichhaiso()">Multiplication(*)</button>
+        <button onclick="thuonghaiso()">Division(/)</button>
+    </form>
+    <script>
+        function tonghaiso() {
+            let _number1 = parseFloat(document.getElementById("number1").value);
+            let _number2 = parseFloat(document.getElementById("number2").value);
+
+            let _tonghaiso = _number1 +  _number2;
+            alert(_tonghaiso);
+        }
+        function hieuhaiso(){
+        var _number1 = parseFloat(document.getElementById("number1").value);
+        var _number2 = parseFloat(document.getElementById("number2").value);
+        var _hieuhaiso = _number1 - _number2;
+        alert(_hieuhaiso);
+        } 
+        function tichhaiso(){
+        var _number1 = parseFloat(document.getElementById("number1").value);
+        var _number2 = parseFloat(document.getElementById("number2").value);
+        var  _tichhaiso = _number1 * _number2;
+        alert(_tichhaiso);
+        } 
+         function thuonghaiso(){
+        var _number1 = parseFloat(document.getElementById("number1").value);
+        var _number2 = parseFloat(document.getElementById("number2").value);
+        var _thuonghaiso = _number1 / _number2;
+        alert(_thuonghaiso);
+        } 
+    </script>
+</body>
+</html>

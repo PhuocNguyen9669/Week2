@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính giai thừa</title>
+</head>
+<body>
+    <h1>Tính giai thừa của số tự nhiên N</h1>
+    <script>
+        var n = prompt('Nhap gia tri cua N');
+        var gt = 0;
+        function giaithua(x) {
+            var giaithua=1;
+        
+            for(var i=1;i<=n;i++){
+        
+                giaithua*=i;
+        }
+       document.write('Giai thua bang' +giaithua)
+        }
+        var n=giaithua(n)        
+    </script>
+</body>
+</html>
