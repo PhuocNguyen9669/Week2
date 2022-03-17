@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xếp loại học lực</title>
+</head>
+<body>
+    <script>
+        var poin = parseFloat(prompt("Nhập vào điểm TB: "));
+        if (poin >= 0 && poin < 3.5) {
+            alert("Học sinh kém");
+        } else if (poin <= 3.5 && poin <5){
+            alert("Học sinh Yếu");
+        } else if (poin>=5 && poin<6.5) {
+            alert("Học sinh Trung bình");
+        }else if (poin>=6.5 && poin<8) {
+            alert("Học sinh Khá");
+        }else if(poin>=8 && poin<9){
+            alert("Học sinh Giỏi");
+        }else if (poin>=9 && poin<=10){
+            alert("Học sinh Xuất sắc")
+        }else{
+            alert("Vui lòng nhập lại ĐTB");
+
+        }
+    </script>
+</body>
+</html>
